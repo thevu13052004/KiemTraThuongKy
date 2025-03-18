@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#ChiTiet {
+    color: #e74c3c;
+}
+
+#header {
+    background-color: #48dbfb;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav #main-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav #main-menu li a:hover {
+    background-color: #ff6b6b;
+}
+
+#toggle {
+    display: none;
+    background: #48dbfb;
+    color: #0f0f0f;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Content Section */
+
+#content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#P1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#hinh1 {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infor {
+    max-width: 600px;
+    text-align: justify;
+}
+
+#ChiTiet {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ChiTiet:hover {
+    text-decoration: underline;
+}
+
+#article {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#article h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: #48dbfb;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #main-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #P1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hinh1 {
+        width: 100%;
+    }
+}
